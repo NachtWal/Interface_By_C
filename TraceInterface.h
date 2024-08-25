@@ -9,7 +9,7 @@ typedef struct traceInterface
 }TraceInterface;
 
 typedef struct traceMethod{
-    void (*trace)(TraceInterface* const, const int);
+    void (*trace)(const int);
 }TraceMethod;
 
 #endif
