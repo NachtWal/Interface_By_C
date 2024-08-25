@@ -7,7 +7,7 @@
  * @param p_this ライントレースオブジェクト
  * @param typeIndex パターン番号
  */
-static void line_trace(TraceInterface* const p_this, const int typeIndex)
+static void line_trace(const int typeIndex)
 {
     printf("Excecute LineTrace Type: %d\n", typeIndex);
 }

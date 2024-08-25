@@ -7,7 +7,7 @@
  * @param p_this シナリオトレースオブジェクト
  * @param typeIndex パターン番号
  */
-static void scenario_trace(TraceInterface* const p_this, const int traceType)
+static void scenario_trace(const int traceType)
 {
     printf("Excecute ScenarioTrace Type: %d\n", traceType);
 }

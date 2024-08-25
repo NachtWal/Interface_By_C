@@ -24,15 +24,10 @@ int main(){
 
     // TraceInterfaceに定義されているtraceを実行する。
     // TraceInterface型にキャストしている。
-    execute_trace((TraceInterface*)&st, 1);
-    execute_trace((TraceInterface*)&lt, 2);
     
+    ((TraceInterface*)&st)->p_method->trace(1);
+    ((TraceInterface*)&st)->p_method->trace(2);    
+
     return 0;
 }
 
-static void execute_trace(TraceInterface* const traceObject, int index){
- 
-    // シナリオトレースなのかライントレースなのかを意識せずにtraceを実行できる。
-    traceObject->p_method->trace(traceObject, index);
-
-}
