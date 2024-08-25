@@ -24,7 +24,6 @@ int main(){
 
     // TraceInterfaceに定義されているtraceを実行する。
     // TraceInterface型にキャストしている。
-    
     ((TraceInterface*)&st)->p_method->trace(1);
     ((TraceInterface*)&st)->p_method->trace(2);    
 
