@@ -29,6 +29,7 @@ void LineTrace_Constructor(LineTrace* p_this, const char* field1)
 {
     //フィールド値を設定している
     p_this->field1 = field1;
+    //ここでインタフェースを実装しているメソッドを指定している。
     ((TraceInterface*)p_this)->p_method = &TRACE_METHOD;
 }
 

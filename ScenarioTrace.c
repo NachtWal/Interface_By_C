@@ -27,7 +27,9 @@ static const TraceMethod TRACE_METHOD = {
  */
 void ScenarioTrace_Constructor(ScenarioTrace* p_this, const char* field1)
 {
+    //属性値を設定している。
     p_this->field1 = field1;
+    //ここでどのメソッドがインタフェースを実装しているか指定している。
     ((TraceInterface*)p_this)->p_method = &TRACE_METHOD;
 }
 
